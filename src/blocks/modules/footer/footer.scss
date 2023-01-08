@@ -1,0 +1,20 @@
+//--------- start footer Area -------------//
+
+.footer-area {
+    padding: 20px 0;
+
+    @media (max-width: 1024px) {
+        padding: 10px 0;
+    }
+
+    .footer-bottom {
+        text-align: center;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+//--------- end footer Area -------------//

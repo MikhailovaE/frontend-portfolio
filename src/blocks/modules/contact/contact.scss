@@ -1,0 +1,83 @@
+.contact-area {
+    background: $primary-color;
+    .row.mt-80 {
+        @media (max-width: 1024px) {
+            margin-top: 40px;
+        }
+    }
+    .contact-title {
+        color: $white;
+        text-align: center;
+        h2 {
+            color: $white;
+            position: relative;
+            margin-bottom: 45px;
+            font-size: 48px;
+            line-height: 45px;
+            @media (max-width: 1024px) {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+            @media (max-width: 576px) {
+                font-size: 30px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: -15px;
+                @include transform(translateX(-50%));
+                width: 100px;
+                height: 2px;
+                background: $white;
+                @media (max-width: 1024px) {
+                    bottom: -5px;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: -19px;
+                @include transform(translateX(-50%));
+                background: $white;
+                width: 10px;
+                height: 10px;
+                border-radius: 8px;
+                @media (max-width: 1024px) {
+                    bottom: -9px;
+                }
+            }
+        }
+        p {
+            max-width: 540px;
+            margin: 0 auto;
+        }
+    }
+    .primary-btn {
+        background: $white;
+        color: $black;
+        border: 1px solid $white;
+        &:before {
+            color: $black;
+        }
+        span {
+            color: $black;
+        }
+        &:hover {
+            background: transparent;
+            span {
+                color: $white;
+            }
+        }
+    }
+}
+
+.contact-box {
+    text-align: center;
+    h4 {
+        font-size: 21px;
+        font-weight: 700;
+        color: $white;
+    }
+}

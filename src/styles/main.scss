@@ -1,0 +1,152 @@
+// Переменные, миксины, функции
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+// CSS-файлы библиотек
+@import "vendor/libs";
+
+// Основное
+@import "base/fonts";
+@import "base/general";
+
+// БЭМ-блоки
+@import "../blocks/modules";
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+.link-nav {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.about-content {
+    margin-top: 60px !important;
+    margin-bottom: 40px;
+    text-align: center;
+    @media(max-width: 767px) {
+        margin-top:50px;
+    }
+    h1 {
+        font-size: 60px;
+        font-weight: 700;
+        @media(max-width: 767px) {
+            font-size: 35px;
+        }
+    }
+    .box {
+        border: 2px solid $white;
+        padding: 10px 18px;
+        border-radius: 25px;
+        display: inline-block;
+        @media(max-width: 767px) {
+            padding: 7px 15px;
+        }
+        a {
+            color: $white;
+            font-size: 15px;
+            @include transition();
+            padding-left: 16px;
+            padding-right: 16px;
+            border-right: 2px solid $white;
+            @media(max-width: 380px) {
+                font-size: 13px;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                border-right: 0;
+                padding-right: 0;
+            }
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+
+.portfolio_details_area {
+    margin-top: 36px;
+}
+
+.portfolio_details_inner {
+    .row {
+        margin-bottom: 65px;
+        @media(max-width: 480px) {
+            margin-bottom: 30px;
+        }
+    }
+    p {
+        margin-bottom: 30px;
+        font-size: 14px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    .portfolio_right_text {
+        @media(max-width: 991px) {
+            margin-top: 0px;
+        }
+        @media(max-width: 576px) {
+            margin-top: 50px;
+        }
+        h4 {
+            color: $title-color;
+            font-size: 21px;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        p {
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .list {
+            padding-left:0 !important;
+
+            li {
+                margin-bottom: 7px;
+                span {
+                    font-size: 14px;
+                    color: $black;
+                    font-weight: 500;
+                    width: 97px;
+                    display: inline-block;
+                }
+                font-weight: normal;
+                font-size: 14px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                i {
+                    color: #f1cd09;
+                }
+            }
+        }
+    }
+}
+
+.social_details {
+    margin-top: 50px;
+    @media(max-width: 480px) {
+        margin-top: 20px;
+    }
+    li {
+        display: inline-block;
+        margin-right: 14px;
+        a {
+            font-size: 14px;
+            i {
+                color: $black !important;
+                &:hover {
+                    color: $primary-color !important;
+                }
+            }
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
