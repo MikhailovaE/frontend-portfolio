@@ -1553,7 +1553,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .home-banner-area {
-    background: url(../img/img/banner-bg.jpg) center;
+    background: url(../img/banner-bg.jpg) center;
     background-size: cover;
     padding-top: 100px;
 }
@@ -1621,8 +1621,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 0;
 }
 
+.about-area .about-left {
+    margin-left: auto;
+}
+
 .about-area .primary-btn.white {
     margin-right: 10px;
+}
+
+.about-area .img-about {
+    width: 70%;
 }
 
 .work-area {
@@ -2081,7 +2089,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 769px) {
     .home-banner-area .fullscreen {
-        height: 600px !important;
+        height: 300px !important;
     }
 }
 

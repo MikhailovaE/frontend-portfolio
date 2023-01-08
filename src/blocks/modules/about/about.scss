@@ -8,6 +8,8 @@
     }
 
     .about-left {
+        margin-left: auto;
+        
         @media (max-width: 991px) {
             display: none;
         }
@@ -29,5 +31,9 @@
             margin-right: 0;
             margin-bottom: 15px;
         }
+    }
+
+    .img-about {
+        width: 70%;
     }
 }
