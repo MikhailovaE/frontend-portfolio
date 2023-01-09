@@ -1824,7 +1824,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
 }
 
-.contact-box h4 {
+.contact-box h4, .contact-box a {
     font-size: 21px;
     font-weight: 700;
     color: #fff;
