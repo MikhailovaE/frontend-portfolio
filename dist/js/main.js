@@ -17,6 +17,7 @@
   \*********************************************/
 /***/ (() => {
 
+/* eslint-disable no-undef */
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
 window.onscroll = function () {
